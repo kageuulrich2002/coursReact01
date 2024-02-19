@@ -1,5 +1,5 @@
 
-var a = 3
+var a = 8
 var ternaire = true
 const style1 = { backgroundColor: 'green'}
 const style2 = { backgroundColor: 'red'}
