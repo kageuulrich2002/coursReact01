@@ -3,9 +3,9 @@ import { useState } from "react"
 export default function Formulaire() {
 
     var textstyl = {color:'blue',fontFamily: 'cursive',}
-    
+   
+    //Formulaire controlé
     const[firsname, setFirsname] = useState('@') 
-
     const handleChange = (e) => {
         setFirsname(e.target.value) //change le champs a chaque modification
     }
@@ -36,8 +36,11 @@ const  clikTheme = () =>{
     setEcouteTheme(!ecouteTheme)
    
 }
-    return(
+    return( 
+        <>
+        <br/><br/>
         <div style={ecouteTheme ? grey : gold}>
+           
             <h2>Formulaire React</h2>
             <form>
                 <h3>Champs controlé par react</h3>
@@ -59,6 +62,8 @@ const  clikTheme = () =>{
 
             <button onClick={() => clikTheme() }>{ecouteTheme ? 'Grey' : 'Gold'}</button> <br/><br/><br/>
         </div>
+
+        </>
     )
     
 }
